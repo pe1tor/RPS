@@ -1,0 +1,75 @@
+.artboard {
+    width: 1366px;
+    height: 851px;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    opacity: 1;
+}
+
+.heading {
+    margin-top: 128px;
+    margin-left: 306px;
+    width: 738px;
+    height: 61px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    letter-spacing: 0;
+    color: #36006C;
+    opacity: 1;
+}
+
+.paragraph {
+    margin-left: 306px;
+    margin-top: 43px;
+    width: 754px;
+    height: 134px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 0.54;
+}
+
+.subtitle {
+    margin-left: 577px;
+    margin-top: 35px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+}
+
+.cards {
+    margin-left: 306px;
+}
+
+.playcard {
+    margin-top: 20px;
+    text-align: center;
+    width: 240px;
+    height: 273px;
+    border-radius: 5px;
+    display: inline-block;
+    opacity: 1;
+}
+
+.playcard:hover {
+    background: #F8F8F8 0 0 no-repeat padding-box;
+}
+
+.playcard-image {
+    margin-top: 46px;
+}
+
+.playcard-name {
+    margin-top: 26px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0;
+    color: #36006C;
+    opacity: 1;
+}

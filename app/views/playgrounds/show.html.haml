@@ -1,0 +1,23 @@
+.artboard
+  .heading
+    = I18n.t('views.playgrounds.show.heading')
+  .paragraph
+    = I18n.t('views.playgrounds.show.paragraph')
+  .subtitle
+    = I18n.t('views.playgrounds.show.subtitle')
+  .cards
+    .playcard
+      .playcard-image
+        = image_tag('Rock.svg', width: '63', height: '139', class: 'playcard-img')
+      .playcard-name
+        = I18n.t('views.playgrounds.show.rock')
+    .playcard
+      .playcard-image
+        = image_tag('Paper.svg', width: '63', height: '139', class: 'playcard-img')
+      .playcard-name
+        = I18n.t('views.playgrounds.show.paper')
+    .playcard
+      .playcard-image
+        = image_tag('Scissors.svg', width: '63', height: '139', class: 'playcard-img')
+      .playcard-name
+        = I18n.t('views.playgrounds.show.scissors')
