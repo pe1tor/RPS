@@ -14,4 +14,6 @@
 //= require turbolinks
 //= require_tree .
 
-new Playground;
+document.addEventListener("DOMContentLoaded", () => {
+  new Playground().init();
+});

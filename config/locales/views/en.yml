@@ -17,3 +17,11 @@ en:
           Paper
         scissors:
           Scissors
+      modal_waiting:
+        heading:
+          WAITING CURB’S CHOOSE
+        your_bet:
+          Your bet
+      modal_result:
+        button:
+          Ok

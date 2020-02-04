@@ -29,6 +29,7 @@ group :development do
 end
 
 group :test do
+  gem 'mocha', '~> 1.8.0'
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   gem 'chromedriver-helper'
