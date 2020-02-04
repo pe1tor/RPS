@@ -43,22 +43,28 @@ class Playground {
     let message = '';
     let heading = '';
     let image = '';
-    if (json.result === true) {
-      heading = 'You win!';
-      message = `Curb with ${json.opponent_choice} lost`;
-      image = json.opponent_choice
-    } else if (json.result === false) {
-      heading = 'You lost!';
-      message = `Curb with ${json.opponent_choice} wins`;
-      image = json.opponent_choice
-    } else if (json.result === 'tie') {
-      heading = 'Tie!';
-      message = 'It\'s a tie';
-      image = 'tie'
-    } else if (json.result === null) {
-      heading = 'Who should win?';
-      message = `Curb choose ${json.opponent_choice}`;
-      image = 'wat';
+    let curbsChoice = json.opponent_choice;
+    switch(json.result) {
+      case true:
+        heading = 'You win!';
+        message = `Curb with ${curbsChoice} lost`;
+        image = curbsChoice;
+        break;
+      case false:
+        heading = 'You lost!';
+        message = `Curb with ${curbsChoice} wins`;
+        image = curbsChoice;
+        break;
+      case 'tie':
+        heading = 'Tie!';
+        message = 'It\'s a tie';
+        image = 'tie';
+        break;
+      case null:
+        heading = 'Who should win?';
+        message = `Curb choose ${curbsChoice}`;
+        image = 'wat';
+        break;
     }
     this.displayResultModal(heading, message, image);
   }
