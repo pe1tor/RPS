@@ -1,0 +1,15 @@
+.modal-waiting.modal-result.hidden
+  = image_tag('close.svg', width: '20', height: '20', class: 'close')
+  .modal-header
+    .js-modal-header
+    .modal-content
+      .modal-subheader
+        .js-modal-subheader
+      .playcard-image
+        = image_tag('Rock.svg', width: '63', height: '139', class: 'playcard-img rock hidden')
+        = image_tag('Paper.svg', width: '63', height: '139', class: 'playcard-img paper hidden')
+        = image_tag('Scissors.svg', width: '63', height: '139', class: 'playcard-img scissors hidden')
+        = image_tag('tie.jpg', width: '100', height: '139', class: 'playcard-img tie hidden')
+        = image_tag('wat.png', width: '139', height: '139', class: 'playcard-img wat hidden')
+      %button.modal-button
+        = I18n.t('views.playgrounds.modal_result.button')

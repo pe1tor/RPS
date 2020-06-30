@@ -1,0 +1,14 @@
+.modal-waiting.hidden
+  = image_tag('close.svg', width: '20', height: '20', class: 'close')
+  .modal-header
+    = I18n.t('views.playgrounds.modal_waiting.heading')
+    .modal-content
+      .player-choice
+        .playcard-image
+        .playcard-name
+          = I18n.t('views.playgrounds.modal_waiting.your_bet')
+      .curb-choice
+        .playcard-image.loader
+          = image_tag('loader.svg', width: '63', height: '139', class: 'playcard-img')
+        .playcard-name
+          = image_tag('curb_logo.png', width: '75', height: '23')

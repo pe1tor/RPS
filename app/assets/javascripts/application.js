@@ -13,3 +13,7 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+document.addEventListener("DOMContentLoaded", () => {
+  new Playground().init();
+});
